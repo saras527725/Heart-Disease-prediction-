@@ -1,0 +1,7 @@
+heart=pd.read_csv('/content/heart_disease_data.csv')
+heart.head()
+heart.tail()
+heart.shape
+heart.info()
+heart.isnull().sum()
+heart.describe()
