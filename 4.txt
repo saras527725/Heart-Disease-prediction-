@@ -1,0 +1,13 @@
+a.fit(X_train,Y_train)
+X_train_prediction=a.predict(X_train)
+train_data_accu=accuracy_score(X_train_prediction,Y_train)
+print(train_data_accu)
+X_test_prediction=a.predict(X_test)
+test_data_accu=accuracy_score(X_test_prediction,Y_test)
+print(test_data_accu)
+input=(57,0,0,120,354,0,1,163,1,0.6,2,0,2)
+input_data_as_numpy_array=np.asarray(input)
+input_data_reshaped=input_data_as_numpy_array.reshape(1,-1)
+realprediction=a.predict(input_data_reshaped)
+
+print(realprediction)
